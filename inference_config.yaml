@@ -1,0 +1,27 @@
+experiment_dir: inference_output
+n_forward_steps: 2
+checkpoint_path: train_output/training_checkpoints/ckpt.tar
+logging:
+  level: INFO
+  log_to_screen: true
+  log_to_file: true
+  log_to_wandb: false
+initial_condition:
+  path: /data1/DATA_ARCHIVE/Reanalysis/ERA5_new/data_360x180/daily/multi_lev/t/ERA5_dy_t_195001.nc
+  engine: netcdf4
+  start_indices:
+    n_initial_conditions: 1
+    first: 0
+    interval: 1
+forcing_loader:
+  dataset:
+    data_path: /data1/DATA_ARCHIVE/Reanalysis/ERA5_new/data_360x180/daily/multi_lev/t
+    file_pattern: '*.nc'
+  num_data_workers: 0
+forward_steps_in_memory: 10
+data_writer:
+  save_prediction_files: true
+  save_monthly_files: true
+  save_histogram_files: false
+aggregator:
+  log_global_mean_time_series: false

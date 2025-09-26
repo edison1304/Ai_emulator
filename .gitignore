@@ -1,0 +1,100 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs and debug
+logs/
+*.log
+nohup.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE configs
+.vscode/
+.idea/
+
+# Python tooling
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Cache
+.cache/
+
+# Training and large artifacts
+train_output/
+inference_results/
+checkpoints/
+
+# Local config
+*.local.yaml
+*.secret*
+
+# Node
+node_modules/
+
+# Others
+*.tmp
+*.swp
+
+
+# Large datasets, checkpoints, and results (added)
+Ace_data_construction/
+InternImage-master/
+InternImage_master/
+train_output/
+inference_results/
+checkpoints/
+outputs/
+results/
+artifacts/
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.h5
+*.npz
+*.npy
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Common raw data formats
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.orc
+*.avro
+*.gz
+*.xz
+*.bz2
+
+# Local run dirs
+--output-dir
+--checkpoint
+

@@ -1,0 +1,9 @@
+# these are convenient to have installed for ad-hoc analysis but are not requirements of the "fme" package
+Bottleneck
+bokeh>=3.1.0
+dask[distributed]
+ipywidgets
+jupyterlab
+nc-time-axis
+pyproj<3.7
+seaborn
